@@ -1,2 +1,3 @@
 /venv/
 /blogengine/blog/migrations/
+*/__pycache__/*
