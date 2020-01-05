@@ -4,3 +4,5 @@
 */.DS_Store
 blogengine/blog/__pycache__/
 blogengine/blogengine/__pycache__/
+.DS_Store
+.idea
