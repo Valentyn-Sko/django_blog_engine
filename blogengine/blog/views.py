@@ -45,7 +45,7 @@ class PostUpdate(ObjectUpdateMixin, View):
     template = 'blog/post_update_form.html'
 
 
-class PostCreate(View):
+class PostCreate(ObjectCreateMixin, View):
     form_model = PostForm
     template = 'blog/post_create_form.html'
 
