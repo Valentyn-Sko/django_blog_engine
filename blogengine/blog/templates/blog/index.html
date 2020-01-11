@@ -5,9 +5,11 @@ Names
 
 {% block content %}
 <h1 class="mb-4">Posts: </h1>
-{% for post in posts %}
+{% for post in page_object.object_list %}
 {% include 'blog/includes/post_card.html' %}
 {% endfor %}
 {% endblock %}
+
+
 
 

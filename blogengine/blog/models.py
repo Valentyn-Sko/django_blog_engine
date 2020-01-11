@@ -31,6 +31,9 @@ class Post(models.Model):
             self.slug = gen_slug(self.title)
         super().save(*args, **kwargs)
 
+    class Meta:
+        ordering = ['-date_pub']
+
 
 class Tag(models.Model):
     title = models.CharField(max_length=50, unique=True)
@@ -49,3 +52,6 @@ class Tag(models.Model):
         if not self.id:
             self.slug = gen_slug(self.title)
         super().save(*args, **kwargs)
+
+    class Meta:
+        ordering = ['title']
